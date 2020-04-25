@@ -1,0 +1,44 @@
+package course;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Triangle;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		
+		Scanner ler = new Scanner(System.in);
+		
+		Triangle x, y;
+		
+		x = new Triangle();
+		y = new Triangle();
+		
+		System.out.println("Enter the measures of triangle x: ");
+		
+		 x.a = ler.nextDouble();
+		 x.b = ler.nextDouble();
+		 x.c = ler.nextDouble();
+		
+		System.out.println("Enter the measures of triangle y: ");
+		 y.a = ler.nextDouble();
+		 y.b = ler.nextDouble();
+		 y.c = ler.nextDouble();
+		
+		double p = (x.a + x.b + x.c) / 2;		
+		double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
+		
+		p = (y.a + y.b + y.c);
+		double areaY = Math.sqrt(p * (p - y1) * (p - y2) * (p - y3));
+		
+		if(areaX > areaY) {
+			System.out.println("Area X maior.");
+		}else
+			System.out.println("Area Y maior.");
+		
+		ler.close();
+	}
+}
