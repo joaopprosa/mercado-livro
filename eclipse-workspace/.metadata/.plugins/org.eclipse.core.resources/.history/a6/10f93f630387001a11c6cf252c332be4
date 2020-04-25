@@ -26,12 +26,6 @@ public class ProgramExercicio3 {
 		student.nota3 = sc.nextDouble();
 		System.out.println();
 		
-		student.nota4 = sc.nextDouble();
-		System.out.println();
-		
-		student.nota5 = sc.nextDouble();
-		System.out.println();
-		
 		if(student.notaFinal() >= 60) {
 			System.out.printf("FINAL GRADE = %.2f\n", student.notaFinal());
 			System.out.println("PASS");
